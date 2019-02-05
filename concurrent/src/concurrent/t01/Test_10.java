@@ -1,8 +1,8 @@
 /**
- * volatile关键字
- * volatile的非原子性问题
- * volatile， 只能保证可见性，不能保证原子性。
- * 不是枷锁问题，只是内存数据可见。
+ * volatileå…³é”®å­—
+ * volatileçš„é�žåŽŸå­�æ€§é—®é¢˜
+ * volatileï¼Œ å�ªèƒ½ä¿�è¯�å�¯è§�æ€§ï¼Œä¸�èƒ½ä¿�è¯�åŽŸå­�æ€§ã€‚
+ * ä¸�æ˜¯æž·é”�é—®é¢˜ï¼Œå�ªæ˜¯å†…å­˜æ•°æ�®å�¯è§�ã€‚
  */
 package concurrent.t01;
 
@@ -12,7 +12,7 @@ import java.util.List;
 public class Test_10 {
 	
 	volatile int count = 0;
-	/*synchronized*/ void m(){
+	synchronized void m(){
 		for(int i = 0; i < 10000; i++){
 			count++;
 		}
