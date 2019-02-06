@@ -1,7 +1,7 @@
 1.atomicity: synchornized
 2.visibility: volatile
 3.AtomicInteger, etc.
-4.object.wait() give up process and waiting for waking up / object.notifyAll() notify other threads but do not give up processor
+4.object.wait() give up process and waiting for waking up / object.notifyAll() notify other threads but do not give up processor. usually works with while() together
 5.CountDownLatch latch.await() / latch.countDown()
 6.ReentrantLock: 1) MUST unlock in the finally clause 2) tryLock 3） Lock.lockInterruptibly (可打断) 4） could be fair lock, synchornized can not be fair lock
 
